@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
 body {
-    background-color: rgb(158, 140, 140);
+    background-color: rgb(187, 174, 174);
 }
 .container {
     display: flex;
@@ -12,9 +14,14 @@ body {
     width: 100vw; 
 }
 #first {
+    margin-top: 20px;
     color: rgb(243, 32, 32);
-    background-color: black;
-    border: 2px solid grey;
-    border-radius: 2px;
-    padding: 5px;
+    background-color: rgb(40, 37, 37);
+    border: 3px solid rgb(85, 81, 81);
+    border-radius: 0px 10px;
+    padding: 10px;
+}
+#first {
+    font-size: 3.5rem;
+    font-family: "Sixtyfour Convergence", sans-serif;
 }
