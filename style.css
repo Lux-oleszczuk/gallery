@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: rgb(187, 174, 174);
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .full-width {
     width: 100vw;
 }
+
 #first {
     margin-top: 20px;
     color: rgb(243, 32, 32);
@@ -34,29 +39,84 @@ body {
     width: 98.5%;
     height: 45vw;
 }
+
 .flex-col {
     flex-direction: column;
 }
+.card {
+    width: 100%;
+}
 .card img {
-    width: 300px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
 }
+
 /* gallery styling */
 #gallery-div {
-    width: 70%;
     display: grid;
     grid-template-areas: "item1 item2 item3 item4";
 }
-#ithem1{
+
+#ithem1 {
     grid-area: item1;
 }
-#ithem2{
+
+#ithem2 {
     grid-area: item2;
 }
-#ithem3{
+
+#ithem3 {
     grid-area: item3;
 }
-#ithem4{
+
+#ithem4 {
     grid-area: item4;
+}
+
+/* resizing content - mobile first content/ breakpoints
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #gallery-div {
+        grid-template-areas:
+            "item1" 
+            "item2"
+            "item3" 
+            "item4";
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #gallery-div {
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4";
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #gallery-div {
+        justify-content: center;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4";
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #gallery-div {
+        grid-template-areas:
+            "item1 item2 item3 item4";
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #gallery-div {
+        grid-template-areas:
+            "item1 item2 item3 item4";
+    }
 }
