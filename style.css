@@ -84,6 +84,12 @@ body {
             "item3" 
             "item4";
     }
+    #cover-img {
+        display: none;
+    }
+    #first {
+        font-size: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -93,8 +99,11 @@ body {
             "item1 item2"
             "item3 item4";
     }
+    #first {
+        font-size: 2.5rem;
+    }
+    
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #gallery-div {
