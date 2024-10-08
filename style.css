@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(187, 174, 174);
+    background: linear-gradient(to top, rgb(181, 186, 187), rgba(0,0,0,436));
 }
 /* general styling for all givs with the class .container */
 .container {
@@ -20,16 +21,53 @@ body {
     width: 100vw;
 }
 /* heading, the title of the gallery styling */
-#first {
+.first {
     margin-top: 20px;
-    color: rgb(243, 32, 32);
     background-color: rgb(40, 37, 37);
     border: 3px solid rgb(85, 81, 81);
     border-radius: 0px 10px;
-    /* not add px to paddings because it can break the responsivness */
-    padding: 10wv;
-    font-size: 3.5rem;
+}
+.title-font {
     font-family: "Sixtyfour Convergence", sans-serif;
+    color: rgb(243, 32, 32);
+}
+#title {
+    /* not add px to paddings because it can break the responsivness */
+    /* padding: 10wv; */
+    font-size: 3.5rem;
+}
+#title-add {
+    font-size: 2rem;
+}
+#title, #title-add {
+    /* I had to repeat the code from .container because when I add a .container class to it, it places both texts next to each other :( */
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+/* wildlife-link, wildlife-link-btn styling the div, link and hover effect */
+#wildlife-link {
+    color: white;
+}
+#wildlife-link-text {
+    margin: 10px;
+    line-height: 30px;
+}
+#wildlife-link-btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(40, 37, 37);
+    border: 3px solid rgb(85, 81, 81);
+    border-radius: 0px 10px;
+    padding: 5px;
+}
+#wildlife-link-btn:hover, #wildlife-link-btn a:active {
+    font-size: 1.3rem ;
+    background-color: rgb(6, 5, 5);
+    color: rgb(181, 180, 180);
+    border: 4px solid rgb(55, 52, 52);
 }
 
 /* object-fit: cover; make the pc fint inside a container but do not deform the image */
