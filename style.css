@@ -29,7 +29,7 @@ body {
 }
 .title-font {
     font-family: "Sixtyfour Convergence", sans-serif;
-    color: rgb(243, 32, 32);
+    color: rgb(90, 13, 13);
 }
 #title {
     /* not add px to paddings because it can break the responsivness */
@@ -71,11 +71,24 @@ body {
 }
 
 /* object-fit: cover; make the pc fint inside a container but do not deform the image */
-.img img {
+#cover-img img {
+    position: relative;
     object-fit: cover;
-    margin-bottom: 2vw;
     width: 98.5%;
     height: 45vw;
+}
+#gradient {
+    position: absolute;
+    top: 200px;
+    width: 98.5%;
+    height: 45vw;
+    background: linear-gradient(217deg,rgb(121, 32, 20), rgba(0, 0, 0, 0.436)),
+                linear-gradient(127deg, rgba(70, 187, 50, 0.8), rgba(0, 0, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(255, 252, 46, 0.8), rgba(38, 255, 0, 0) 70.71%);
+}
+#cover-img img, #gradient {
+    border: 1px solid rgb(85, 81, 81);
+    border-radius: 0 0 50% 50%;
 }
 
 .flex-col {
@@ -154,8 +167,16 @@ body {
 #item3 {
     color: rgb(215, 215, 215);
 }
-#item6 {
-    color: black;
+
+#curved {
+    width: max-width;
+    height: 75px;
+    color: white;
+    border: 1px solid rgb(161, 157, 157);
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(217deg,rgb(121, 32, 20), rgba(0, 0, 0, 0.436)),
+                linear-gradient(127deg, rgba(70, 187, 50, 0.8), rgba(0, 0, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(255, 252, 46, 0.8), rgba(38, 255, 0, 0) 70.71%);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -168,6 +189,9 @@ body {
     }
     #first {
         font-size: 2.5rem;
+    }
+    #item3 p, #item4 p {
+        color: rgb(235, 235, 235);
     }
     
 }
@@ -188,6 +212,9 @@ body {
         grid-template-areas:
             "item1 item2 item3"
             "item4 item5 item6";
+    }
+    #item4 p {
+        color: black;
     }
 }
 
