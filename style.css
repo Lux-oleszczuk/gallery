@@ -141,6 +141,22 @@ body {
         font-size: 2rem;
     }
 }
+.card p {
+    margin: 10px;
+    line-height: 22px;
+}
+#item1 p {
+    color: white;
+}
+#item2 p {
+    color: rgb(235, 235, 235);
+}
+#item3 {
+    color: rgb(215, 215, 215);
+}
+#item6 {
+    color: black;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
