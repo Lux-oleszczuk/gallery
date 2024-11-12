@@ -39,7 +39,7 @@ body {
 #title-add {
     font-size: 2rem;
 }
-#title, #title-add {
+#title, #title2, #title-add {
     /* I had to repeat the code from .container because when I add a .container class to it, it places both texts next to each other :( */
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ body {
     margin: 10px;
     line-height: 30px;
 }
-#wildlife-link-btn {
+.wildlife-link-btn {
     text-decoration: none;
     color: white;
     background-color: rgb(40, 37, 37);
@@ -63,11 +63,22 @@ body {
     border-radius: 0px 10px;
     padding: 5px;
 }
-#wildlife-link-btn:hover, #wildlife-link-btn a:active {
+.wildlife-link-btn:hover, .wildlife-link-btn a:active {
     font-size: 1.3rem ;
     background-color: rgb(6, 5, 5);
     color: rgb(181, 180, 180);
     border: 4px solid rgb(55, 52, 52);
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    padding: 30px;
+}
+h4 {
+    margin: 30px;
+}
+#btn-margin {
+    margin-left: 10px;
 }
 
 /* object-fit: cover; make the pc fint inside a container but do not deform the image */
@@ -79,7 +90,7 @@ body {
 }
 #gradient {
     position: absolute;
-    top: 200px;
+    top: 222px;
     width: 98.5%;
     height: 45vw;
     background: linear-gradient(217deg,rgb(121, 32, 20), rgba(0, 0, 0, 0.436)),
@@ -110,6 +121,12 @@ body {
     "item1 item2 item3" 
     "item4 item5 item6";
 }
+#gallery-div2 {
+    display: grid;
+    grid-template-areas: 
+    "item7 item8 item9"
+    "item10 item11 item12";
+}
 /* gallery items */
 #ithem1 {
     grid-area: item1;
@@ -130,9 +147,26 @@ body {
 #ithem5 {
     grid-area: item5;
 }
-
 #ithem6 {
     grid-area: item6;
+}
+#ithem7 {
+    grid-area: item7;
+}
+#ithem8 {
+    grid-area: item8;
+}
+#ithem9 {
+    grid-area: item9;
+}
+#ithem10 {
+    grid-area: item10;
+}
+#ithem11 {
+    grid-area: item11;
+}
+#ithem12 {
+    grid-area: item12;
 }
 
 /* resizing content - mobile first content/ breakpoints */
@@ -146,6 +180,15 @@ body {
             "item4"
             "item5"
             "item6";
+    }
+    #gallery-div2 {
+        grid-template-areas: 
+            "item7"
+            "item8"
+            "item9"
+            "item10"
+            "item11"
+            "item12";
     }
     #cover-img {
         display: none;
@@ -187,6 +230,12 @@ body {
             "item3 item4"
             "item5 item6";
     }
+    #gallery-div2 {
+        grid-template-areas: 
+            "item7 item8"
+            "item9 item10"
+            "item11 item12";
+    }
     #first {
         font-size: 2.5rem;
     }
@@ -204,6 +253,12 @@ body {
             "item3 item4"
             "item5 item6";
     }
+    #gallery-div2 {
+        grid-template-areas: 
+            "item7 item8"
+            "item9 item10"
+            "item11 item12";
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -212,6 +267,11 @@ body {
         grid-template-areas:
             "item1 item2 item3"
             "item4 item5 item6";
+    }
+    #gallery-div2 {
+        grid-template-areas: 
+            "item7 item8 item9"
+            "item10 item11 item12";
     }
     #item4 p {
         color: black;
@@ -224,5 +284,10 @@ body {
         grid-template-areas:
             "item1 item2 item3"
             "item4 item5 item6";
+    }
+    #gallery-div2 {
+        grid-template-areas: 
+            "item7 item8 item9"
+            "item10 item11 item12";
     }
 }
